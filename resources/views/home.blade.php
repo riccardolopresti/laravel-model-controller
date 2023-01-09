@@ -14,10 +14,10 @@
 
                         <li>
                             <h5>
-                                <a href="#">{{$movie->title}}:</a>
+                                <a href="{{route('movie-details', $movie->id)}}">{{$movie->title}}:</a>
                             </h5>
-                            <p>Voto: {{$movie->vote}}</p>
                             <p>Nazionalità: {{$movie->nationality}}</p>
+                            <p>Voto: {{$movie->vote}}</p>
                         </li>
 
                     @endforeach
